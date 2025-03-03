@@ -1,17 +1,17 @@
-import { Footer } from "@/components/Footer";
-import { Header } from "@/components/Header";
+"use client"
+import HeroVideo from "@/components/Hero";
 
-const Page = async ({
-  searchParams,
-}: {
-  searchParams: { [key: string]: string | string[] | undefined };
-}) => {
+const Page = () => {
   return (
-    <div className="container mx-auto px-5 mb-10">
+    <div className=" ">
       <div>
-        <h1>
-          yo
-        </h1>
+    
+
+        <HeroVideo
+          video={"/videos/sidewalk.mp4"}
+          text="Gabby Lulu"
+          secText="Software Engineer"
+        />
       </div>
 
     </div>

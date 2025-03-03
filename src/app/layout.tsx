@@ -3,13 +3,20 @@ import { config } from "@/config";
 import { signOgImageUrl } from "@/lib/og-image";
 import { cn } from "@/lib/utils";
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { Inter, Rethink_Sans} from "next/font/google";
 import "./globals.css";
 import {Header} from "@/components/Header";
 import {Footer} from "@/components/Footer";
 import Providers from "@/components/theme-provider";
 
-const fontSans = Inter({ subsets: ["latin"], variable: "--font-sans" });
+// const fontSans = Inter({ subsets: ["latin"], variable: "--font-sans" });
+
+
+const fontSans = Rethink_Sans({
+  subsets: ["latin"],
+  weight: ["400", "500", "600", "700", "800"],
+  variable: "--font-sans",
+});
 
 export const metadata: Metadata = {
   title: {
@@ -38,7 +45,7 @@ export default function RootLayout({
     <html lang="en">
       <body
         className={cn(
-          "min-h-screen bg-background font-sans antialiased max-w-6xl m-auto",
+          "min-h-screen bg-background font-sans antialiased m-auto",
           fontSans.variable
         )}
       >
@@ -49,9 +56,9 @@ export default function RootLayout({
           disableTransitionOnChange
         >
           <main>
-            <Header />
+            {/* <Header /> */}
             {children}
-            <Footer />
+            {/* <Footer /> */}
             </main>
         </Providers>
       </body>

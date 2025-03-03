@@ -20,6 +20,9 @@ const config = {
     },
     extend: {
       colors: {
+        titleColor:"rgba(235, 235, 245, 0.3)",
+        linkColors:"rgba(235, 235, 245, 0.6)",
+        hoverColor: 'rgb(94, 92, 230)',
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
         ring: "hsl(var(--ring))",
@@ -75,6 +78,12 @@ const config = {
       },
       fontFamily: {
         sans: ["var(--font-sans)", ...fontFamily.sans],
+      },
+      fontSize: {
+        '7xl': '5rem',
+        '8xl': '6rem',
+        '9xl': '7rem',
+        '10xl': '8rem',
       },
     },
   },
