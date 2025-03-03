@@ -20,42 +20,14 @@ const config = {
     },
     extend: {
       colors: {
-        titleColor:"rgba(235, 235, 245, 0.3)",
-        linkColors:"rgba(235, 235, 245, 0.6)",
+        textSec:"rgba(235, 235, 245, 0.3)",
+        textTert:"rgba(235, 235, 245, 0.6)",
         hoverColor: 'rgb(94, 92, 230)',
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
         ring: "hsl(var(--ring))",
         background: "hsl(var(--background))",
         foreground: "hsl(var(--foreground))",
-        primary: {
-          DEFAULT: "hsl(var(--primary))",
-          foreground: "hsl(var(--primary-foreground))",
-        },
-        secondary: {
-          DEFAULT: "hsl(var(--secondary))",
-          foreground: "hsl(var(--secondary-foreground))",
-        },
-        destructive: {
-          DEFAULT: "hsl(var(--destructive))",
-          foreground: "hsl(var(--destructive-foreground))",
-        },
-        muted: {
-          DEFAULT: "hsl(var(--muted))",
-          foreground: "hsl(var(--muted-foreground))",
-        },
-        accent: {
-          DEFAULT: "hsl(var(--accent))",
-          foreground: "hsl(var(--accent-foreground))",
-        },
-        popover: {
-          DEFAULT: "hsl(var(--popover))",
-          foreground: "hsl(var(--popover-foreground))",
-        },
-        card: {
-          DEFAULT: "hsl(var(--card))",
-          foreground: "hsl(var(--card-foreground))",
-        },
       },
       borderRadius: {
         lg: "var(--radius)",
@@ -67,14 +39,23 @@ const config = {
           from: { height: "0" },
           to: { height: "var(--radix-accordion-content-height)" },
         },
+        "rolodex": {
+          "0%": {transform: "rotateX(90deg)", opacity: "0"},
+          "100%": {transform: "rotateX(0deg)", opacity: "1"},
+        },
         "accordion-up": {
           from: { height: "var(--radix-accordion-content-height)" },
           to: { height: "0" },
         },
       },
+      perspective: {
+        1000: "1000px",
+      },
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
+        "rolodex": "rolodex 1s ease-out forwards",
+
       },
       fontFamily: {
         sans: ["var(--font-sans)", ...fontFamily.sans],
