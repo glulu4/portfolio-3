@@ -1,4 +1,5 @@
 import React, {useRef} from "react";
+import Links from "./Links";
 
 interface HeroVideoProps {
     text?: string;
@@ -32,18 +33,8 @@ const HeroVideo = ({text, secText, video}: HeroVideoProps) => {
                         </span>
                     </h1>
 
-                    <div className="pl-2 flex flex-row items-center gap-6 text-textTert text-lg">
+                    <Links />
 
-                        <a href="/projects" className="hover:text-hoverColor">
-                            Projects
-                        </a>
-                        <a href="/about" className="hover:text-hoverColor">
-                            About
-                        </a>
-                        <a href="/contact" className="hover:text-hoverColor">
-                            Contact 
-                        </a>
-                    </div>
 
                 </div>
             </div>

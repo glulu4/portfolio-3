@@ -22,10 +22,12 @@ const config = {
       colors: {
         textSec:"rgba(235, 235, 245, 0.3)",
         textTert:"rgba(235, 235, 245, 0.6)",
+        whitesmoke: "#f5f5f5c7",
         hoverColor: 'rgb(94, 92, 230)',
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
         ring: "hsl(var(--ring))",
+        modalbg:"rgba(120, 120, 128, 0.66)",
         background: "hsl(var(--background))",
         foreground: "hsl(var(--foreground))",
       },

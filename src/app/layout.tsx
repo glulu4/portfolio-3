@@ -8,7 +8,6 @@ import "./globals.css";
 import {Header} from "@/components/Header";
 import {Footer} from "@/components/Footer";
 import Providers from "@/components/theme-provider";
-
 // const fontSans = Inter({ subsets: ["latin"], variable: "--font-sans" });
 
 
@@ -45,7 +44,7 @@ export default function RootLayout({
     <html lang="en">
       <body
         className={cn(
-          "min-h-screen bg-background font-sans antialiased m-auto",
+          "min-h-screen bg-current font-sans antialiased m-auto",
           fontSans.variable
         )}
       >
