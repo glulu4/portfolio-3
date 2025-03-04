@@ -1,4 +1,3 @@
-
 export enum Skill {
     UI = "UI",
     UX = "UX",
@@ -95,7 +94,7 @@ export const projects = [
         title: "Bouncing DVD Logo",
         skills: [Skill.UI], // Inferred from React
         category: Category.Website,
-        link: `${window.location.origin}/dvd`,
+        link: `/dvd`,
         description: `
       Recreated the classic bouncing DVD logo using React.
     `,

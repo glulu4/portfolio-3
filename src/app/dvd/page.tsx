@@ -1,5 +1,5 @@
 "use client"
-import React, {useState} from 'react';
+import React, {use, useEffect, useState} from 'react';
 import {motion} from 'framer-motion';
 
 const DVD = () => {
@@ -9,9 +9,16 @@ const DVD = () => {
 
     const [xspeed, setXSpeed] = useState(1)
     const [yspeed, setYSpeed] = useState(1)
-    const width = window.innerWidth;
 
-    const height = window.innerHeight;
+    const [width, setWidth] = useState(0);
+    const [height, setHeight] = useState(0);
+
+
+    useEffect(() => {
+        setWidth(window.innerWidth);
+        setHeight(window.innerHeight)
+
+    },[])
 
 
 
@@ -24,11 +31,6 @@ const DVD = () => {
 
     const moveRectangle = () => {
 
-        // console.log("w: ", window.innerWidth);
-        // console.log("h: ", window.innerHeight);
-
-        // console.log("x: ", x);
-        // console.log("y: ", y);
 
         if (x >= width - 160) {
             setColor(pickColor());
@@ -61,12 +63,14 @@ const DVD = () => {
 
 
     // Call moveRectangle on every frame
-    requestAnimationFrame(moveRectangle);
+    if ( typeof window !== "undefined"){
+        requestAnimationFrame(moveRectangle);
+    }
 
     return (
         <div style={{
-            width: window.innerWidth,
-            height: window.innerHeight,
+            width, 
+            height,
             backgroundColor: "black",
             color: "pink",
             padding: 0,

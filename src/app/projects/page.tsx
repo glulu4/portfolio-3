@@ -31,6 +31,8 @@ const Page = () => {
         
         if (!project) 
             return;
+
+        
         return (
             <div className="transition-opacity duration-500 opacity-100">
                 <button onClick={handleBackClick} className="text-hoverColor text-sm sm:text-xl hover:text-hoverColor mb-4 ">
@@ -60,6 +62,10 @@ const Page = () => {
             </div>
         )
     }
+
+
+
+
 
     return (
         <div>
