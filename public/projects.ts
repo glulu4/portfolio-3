@@ -51,6 +51,18 @@ export const projects = [
       and Yagmail for the email system. Code available on GitHub.
     `,
     },
+  {
+    title: "Get Funded",
+    skills: [Skill.UI, Skill.UX, Skill.Visual, Skill.FullStack, Skill.Branding], // Inferred from React Native and Flask
+    category: Category.Website,
+    link: "https://www.gettfunded.com",
+    description: `
+      Get Funded is a modern yet sleek web app that guides users who need a loan 
+      through a modern form to see if they qualify for a loan.
+      I designed the branding, UI/UX, and visual elements, and developed the platform using Next.js and Tailwind CSS.
+      Code available upon request.
+    `,
+  },
     {
         title: "Receipt Budget Tracker",
         skills: [Skill.UI, Skill.FullStack], // Inferred from React Native and Flask
