@@ -73,6 +73,18 @@ export const projects = [
       Implements Azure Document Intelligence for receipt scanning to help small restaurants with soda tax tracking.
     `,
     },
+  {
+    title: "Mass Product Uploader",
+    skills: [Skill.Development], // Inferred from Haskell
+    category: Category.Script,
+    link: null,
+    description: `
+      I developed a script that generated product titles and descriptions with the OpenAI api, 
+      then created an image link and uploaded a product to the stripe api. I also developed a related 
+      script that pulled all the products from the stripe api and uploaded them to the google merchant api.
+    `,
+  },
+
     {
         title: "Virtual Memory Simulator",
         skills: [Skill.Development], // Inferred from Java
