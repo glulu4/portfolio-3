@@ -127,7 +127,7 @@ export const projects = [
         title: "Hoodies For Israel",
         skills: [Skill.UI, Skill.Development], // Inferred from React and Stripe
         category: Category.Website,
-        link: "https://hoodiesforisrael.com/",
+        link: null,
         description: `
       A React web app integrating Stripe Checkout API to raise money for Israel by selling hoodies.
       Uses vanilla CSS flexbox for dynamic resizing. Code on GitHub.
