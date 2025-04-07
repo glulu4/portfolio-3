@@ -5,10 +5,13 @@ import WorkRow from "@/components/WorkRow";
 import {ProjectData, projects} from "../../../public/projects";
 import clsx from "clsx";
 import Links from "@/components/Links";
+import {Loader2} from "lucide-react";
 
 const Page = () => {
     const [selectedProject, setSelectedProject] = useState<ProjectData | null>();
     const [isTransitioning, setIsTransitioning] = useState(false);
+    const [videoLoaded, setVideoLoaded] = useState(false);
+
 
     const handleProjectClick = (project: ProjectData) => {
         setIsTransitioning(true); // Start fade-out
@@ -66,11 +69,16 @@ const Page = () => {
 
 
 
+    
+
 
     return (
         <div>
             
-            <ProjectHero video="/videos/tennis.mp4" header={
+            <ProjectHero 
+            onVideoReady={() => setVideoLoaded(true)}
+            video="/videos/tennis.mp4" 
+            header={
                 !selectedProject ? (
                     <div
                         className={`flex flex-col items-start space-y-4 transition-opacity duration-500 ${isTransitioning ? "opacity-0" : "opacity-100"}`}>
@@ -84,28 +92,37 @@ const Page = () => {
                 )
 
             }>
-                <div
-                    className={
-                        clsx(`flex flex-col space-y-8 w-full max-w-5xl mx-auto h-[70vh] py-4 relative transition-opacity duration-500 ${isTransitioning ? "opacity-0" : "opacity-100"}`,
-                            "overflow-scroll overflow-x-visible"
-                        )}
-                >
-                    {!selectedProject ? (
-                        // Project List View
-                        projects.map((item, index) => (
-                            <div key={index} onClick={() => handleProjectClick(item)}>
-                                <WorkRow
-                                    title={item.title}
-                                    skills={item.skills}
-                                    category={item.category}
-                                />
-                            </div>
-                        ))
-                    ) : (
-                        // Project Details View
-                renderProjectDetails(selectedProject)
-                    )}
-                </div>
+
+                {!videoLoaded ? (
+                    <div className="absolute inset-0 flex items-center justify-center">
+                        <Loader2 className="h-16 w-16 animate-spin text-white" />
+                    </div>
+                ) : 
+                (
+                        <div
+                            className={
+                                clsx(`flex flex-col space-y-8 w-full max-w-5xl mx-auto h-[70vh] py-4 relative transition-opacity duration-500 ${isTransitioning ? "opacity-0" : "opacity-100"}`,
+                                    "overflow-scroll overflow-x-visible"
+                                )}
+                        >
+                            {!selectedProject ? (
+                                // Project List View
+                                projects.map((item, index) => (
+                                    <div key={index} onClick={() => handleProjectClick(item)}>
+                                        <WorkRow
+                                            title={item.title}
+                                            skills={item.skills}
+                                            category={item.category}
+                                        />
+                                    </div>
+                                ))
+                            ) : (
+                                // Project Details View
+                                renderProjectDetails(selectedProject)
+                            )}
+                        </div>
+                )}
+
             </ProjectHero>
         </div>
     );

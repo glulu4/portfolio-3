@@ -4,9 +4,10 @@ interface ProjectHeroProps {
     video: string;
     header: React.ReactNode; // Header content (title, etc.)
     children: React.ReactNode; // Main content (work rows)
+    onVideoReady: () => void; // optional callback
 }
 
-const ProjectHero = ({video, header, children}: ProjectHeroProps) => {
+const ProjectHero = ({video, header, children, onVideoReady}: ProjectHeroProps) => {
     const videoRef = useRef<HTMLVideoElement | null>(null);
 
     return (
@@ -19,6 +20,7 @@ const ProjectHero = ({video, header, children}: ProjectHeroProps) => {
                 muted
                 playsInline
                 loop
+                onCanPlay={onVideoReady}
             />
             {/* Overlay container with a semi-transparent background */}
             <div className="relative z-10 flex flex-col h-full w-full bg-black bg-opacity-50 px-6">
