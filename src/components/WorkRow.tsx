@@ -10,8 +10,10 @@ interface WorkRowProps {
 const WorkRow = ({title, skills, category}: WorkRowProps) => {
     return (
         <div className=
-            {clsx("hover:scale-95 transition-transform duration-300 transform-gpu overflow-visible",
-        "flex w-full items-center justify-between py-4 border-b border-gray-700 overflow-x-visible ")}
+            {clsx(
+                "hover:scale-95 transition-transform duration-300 transform-gpu overflow-visible",
+                "hover:cursor-pointer",
+        "flex w-full items-center justify-between py-4 border-b border-gray-500 overflow-x-visible ")}
         >
             <h2 className="text-textTert text-xl sm:text-3xl font-bold flex-1 text-left">
                 {title}

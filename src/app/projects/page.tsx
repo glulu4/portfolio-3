@@ -66,15 +66,8 @@ const Page = () => {
         )
     }
 
-
-
-
-    
-
-
     return (
         <div>
-            
             <ProjectHero 
             onVideoReady={() => setVideoLoaded(true)}
             video="/videos/tennis.mp4" 
@@ -90,9 +83,7 @@ const Page = () => {
                 ) : (   
                     <></>
                 )
-
             }>
-
                 {!videoLoaded ? (
                     <div className="absolute inset-0 flex items-center justify-center">
                         <Loader2 className="h-16 w-16 animate-spin text-white" />
