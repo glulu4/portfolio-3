@@ -15,6 +15,7 @@ export enum Category {
     Website = "Website",
     Script = "Script",
     Dashboard = "Dashboard",
+    Programming = "Programming",
 }
 
 export const projects = [
@@ -64,6 +65,35 @@ export const projects = [
       Code and Demo available upon request. Website is currently down due to client complications.
     `,
   },
+
+  {
+    title: "eCFR Analyzer",
+    skills: [Skill.FullStack, Skill.Development], // Inferred from Python
+    category: Category.Programming,
+    link: "https://ecfr-two.vercel.app",
+    description: `
+    eCFR Analyzer is a Python project designed to parse the Electronic Code of Federal Regulations (eCFR) XML data.
+    The system processes all 50 Titles of federal regulations, extracting word counts by agency per Title.
+    It also enables comparisons of agency word counts across different dates to visualize regulatory growth or changes over time.
+    Visualizations are generated to make regulatory analysis more accessible and actionable.
+    This project focuses on large data handling, parsing, and dynamic reporting.
+    Code and demos available upon request.
+  `,
+  },
+
+  {
+    title: "Currency Arbitrage Detector",
+    skills: [Skill.Development],
+    category: Category.Programming,
+    link: null,
+    description: `
+    Currency Arbitrage Detector is a C++ program designed to find arbitrage opportunities between currency exchange rates.
+    I built the program using Boost for handling HTTP requests to fetch real-time currency data, and implemented the Bellman-Ford algorithm to detect negative cycles indicating arbitrage opportunities.
+    This project was mainly a personal learning exercise to deepen my understanding of C++, graph algorithms, and real-world financial applications.
+    Code available upon request.
+  `,
+  },
+
     {
         title: "Receipt Budget Tracker",
         skills: [Skill.UI, Skill.FullStack], // Inferred from React Native and Flask
