@@ -29,17 +29,17 @@ export const projects = [
       Code available upon request
     `,
     },
-    {
-        title: "Seo Crew",
-        skills: [Skill.UI, Skill.Development], // Inferred from Tailwind CSS and Vercel deployment
-        category: Category.Website,
-        link: "https://www.seo-crew.com",
-        description: `
-      SEO Crew – I styled and developed a modern SEO services website using Tailwind CSS for responsive design,
-      Vercel for seamless deployment, and Wisp for managing blogs. The project focuses on providing a fast,
-      user-friendly experience to showcase SEO services and resources.
-    `,
-    },
+    // {
+    //     title: "Seo Crew",
+    //     skills: [Skill.UI, Skill.Development], // Inferred from Tailwind CSS and Vercel deployment
+    //     category: Category.Website,
+    //     link: "https://www.seo-crew.com",
+    //     description: `
+    //   SEO Crew – I styled and developed a modern SEO services website using Tailwind CSS for responsive design,
+    //   Vercel for seamless deployment, and Wisp for managing blogs. The project focuses on providing a fast,
+    //   user-friendly experience to showcase SEO services and resources.
+    // `,
+    // },
     {
         title: "Sam's Monday Bagels",
         skills: [Skill.UI, Skill.Development], // Inferred from React, Flask, ThreeJs
