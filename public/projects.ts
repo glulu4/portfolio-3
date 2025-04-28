@@ -72,7 +72,7 @@ export const projects = [
     category: Category.Programming,
     link: "https://ecfr-two.vercel.app",
     description: `
-    eCFR Analyzer is a Python project designed to parse the Electronic Code of Federal Regulations (eCFR) XML data.
+    eCFR Analyzer is a small website designed to parse the Electronic Code of Federal Regulations (eCFR) XML data.
     The system processes all 50 Titles of federal regulations, extracting word counts by agency per Title.
     It also enables comparisons of agency word counts across different dates to visualize regulatory growth or changes over time.
     Visualizations are generated to make regulatory analysis more accessible and actionable.
