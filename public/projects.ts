@@ -6,7 +6,6 @@ export enum Skill {
     Development = "Development",
     MotionDesign = "Motion Design",
     Branding = "Branding",
-    Photography = "Photography",
     Visual = "Visual"
 }
 
@@ -30,17 +29,7 @@ export const projects = [
       Code available upon request
     `,
     },
-    // {
-    //     title: "Seo Crew",
-    //     skills: [Skill.UI, Skill.Development], // Inferred from Tailwind CSS and Vercel deployment
-    //     category: Category.Website,
-    //     link: "https://www.seo-crew.com",
-    //     description: `
-    //   SEO Crew – I styled and developed a modern SEO services website using Tailwind CSS for responsive design,
-    //   Vercel for seamless deployment, and Wisp for managing blogs. The project focuses on providing a fast,
-    //   user-friendly experience to showcase SEO services and resources.
-    // `,
-    // },
+
     {
         title: "Sam's Monday Bagels",
         skills: [Skill.UI, Skill.Development], // Inferred from React, Flask, ThreeJs
@@ -53,13 +42,13 @@ export const projects = [
     `,
     },
   {
-    title: "Get Funded",
+    title: "Funding Website",
     skills: [Skill.UI, Skill.UX, Skill.Visual, Skill.FullStack, Skill.Branding], // Inferred from React Native and Flask
     category: Category.Website,
     // link: "https://www.gettfunded.com",
-    link: null,
+    link: "https://get-funding.vercel.app",
     description: `
-      Get Funded is a modern yet sleek web app that guides users who need a loan 
+      This is a modern yet sleek web app that guides users who need a loan 
       through a modern form to see if they qualify for a loan.
       I designed the branding, UI/UX, and visual elements, and developed the platform using Next.js and Tailwind CSS.
       Code and Demo available upon request. Website is currently down due to client complications.
@@ -115,7 +104,20 @@ export const projects = [
       script that pulled all the products from the stripe api and uploaded them to the google merchant api.
     `,
   },
-
+  {
+    title: "Multithreaded AI Product Description Updater",
+    skills: [Skill.Development], // Inferred from Python and Shopify API
+    category: Category.Script,
+    link: null,
+    description: `
+      I created a multithreaded Python script that uses the OpenAI API to generate SEO-optimized product 
+      descriptions for an entire Shopify catalog. The script fetches product data via the Shopify Admin API, 
+      processes multiple products in parallel using Python's threading library, and updates each product's 
+      description in-place. The solution significantly reduced the time needed to update large inventories 
+      while improving discoverability through AI-generated copy.
+    `,
+  },
+  
     {
         title: "Virtual Memory Simulator",
         skills: [Skill.Development], // Inferred from Java
@@ -196,7 +198,7 @@ export const projects = [
     {
         title: "Snap App",
         skills: [Skill.UI, Skill.Development], // Inferred from Flutter
-        category: Category.MobileApp,
+        category: Category.Website,
         link: null,
         description: `
       A Flutter productivity web app designed under MVVM principles, a class project with collaborators.
@@ -213,6 +215,7 @@ export const projects = [
       Code on GitHub.
     `,
     },
+
     {
         title: "Python Bank Statement Parser",
         skills: [Skill.Development], // Inferred from Python
@@ -268,6 +271,19 @@ export const projects = [
       A Next.js website with Tailwind CSS to generate AI-powered ideas for things to do, using Open AI API with a proxy.
     `,
     },
+  {
+    title: "Non-Profit Homepage Website",
+    skills: [Skill.Development, Skill.DesignSystem, Skill.UI], // Inferred from Next.js, Tailwind, and TypeScript
+    category: Category.Website,
+    link: "https://orginization-page-demo.vercel.app",
+    description: `
+        I designed and developed a modern homepage for a non-profit organization using Next.js, Tailwind CSS, 
+        and TypeScript. The site highlights the mission, impact, and ways to get involved, with an emphasis 
+        on clean design, accessibility, and performance. I implemented reusable UI components, mobile-first 
+        responsiveness, and SEO best practices to help the organization increase visibility and engagement online.
+      `,
+  },
+    
 ];
 
 
