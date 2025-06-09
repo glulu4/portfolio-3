@@ -56,6 +56,37 @@ export const projects = [
   },
 
   {
+    title: "ISAACC18",
+    skills: [Skill.UI, Skill.UX, Skill.Visual, Skill.FullStack, Skill.Branding], // Inferred from React Native and Flask
+    category: Category.Website,
+    link: "https://www.isaacc18.org",
+    description: `
+      ISAACC18 ( International Support Of Anesthesia And Critical Care in Israel ) is a dedicated international network of over 200 experienced volunteer anesthesiologists. 
+      The website is built with Next.js and Tailwind CSS, featuring a modern design and responsive layout.
+      This projects features user management and auth & donation processing with Stripe
+    `,
+  },
+
+
+
+  {
+    title: "The Alon Group",
+    skills: [Skill.UI, Skill.DesignSystem, Skill.UX, Skill.Visual, Skill.Branding],
+    category: Category.Website,
+    link: "https://www.thealongroup.com",
+    description: `
+      The Alon Group is a real estate firm specializing in high-end residential and commercial properties.
+      I designed and built their website using Wix, focusing on a clean, modern aesthetic that reflects the brand’s professionalism and trustworthiness.
+      The site includes custom iconography (designed by me), property listings, and contact forms, with responsive layout for seamless browsing on all devices.
+      My role covered everything from visual design and branding to layout structuring and final deployment.
+    `,
+  },
+  
+
+
+
+
+  {
     title: "eCFR Analyzer",
     skills: [Skill.FullStack, Skill.Development], // Inferred from Python
     category: Category.Programming,
