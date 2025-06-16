@@ -11,6 +11,7 @@ export enum Skill {
 
 export enum Category {
     MobileApp = "Mobile app",
+    DesktopApp = "Desktop app",
     Website = "Website",
     Script = "Script",
     Dashboard = "Dashboard",
@@ -41,6 +42,19 @@ export const projects = [
       and Yagmail for the email system. Code available on GitHub.
     `,
     },
+  {
+    title: "Screenshot Auto-Renamer",
+    skills: [Skill.Development],
+    category: Category.DesktopApp,
+    link: null,
+    description: `
+        A Rust desktop tool that watches the system for new screenshots and automatically renames them using 
+        OpenAI Vision API-generated descriptions. The app uses async file system watchers and HTTP clients, 
+        and is designed for efficiency and non-blocking performance. Built as a learning project to explore 
+        systems programming, async Rust, and OpenAI API integration. Code available upon request.
+      `,
+  },
+    
   {
     title: "Funding Website",
     skills: [Skill.UI, Skill.UX, Skill.Visual, Skill.FullStack, Skill.Branding], // Inferred from React Native and Flask
