@@ -35,7 +35,7 @@ export const projects = [
         title: "Sam's Monday Bagels",
         skills: [Skill.UI, Skill.Development], // Inferred from React, Flask, ThreeJs
         category: Category.Website,
-        link: "https://shmuelsmondaybagels.com/",
+        link: null,
         description: `
       Shmuel's Monday Bagels is a professional website for a local bakery in Pittsburgh.
       I used React and Flask for the frontend and backend, ThreeJs for the 3D bagel, Stripe API for payment processing,
@@ -59,13 +59,27 @@ export const projects = [
     title: "Funding Website",
     skills: [Skill.UI, Skill.UX, Skill.Visual, Skill.FullStack, Skill.Branding], // Inferred from React Native and Flask
     category: Category.Website,
-    // link: "https://www.gettfunded.com",
     link: "https://get-funding.vercel.app",
     description: `
       This is a modern yet sleek web app that guides users who need a loan 
       through a modern form to see if they qualify for a loan.
       I designed the branding, UI/UX, and visual elements, and developed the platform using Next.js and Tailwind CSS.
       Code and Demo available upon request. Website is currently down due to client complications.
+    `,
+  },
+  {
+    title: "Facial Surgery Center",
+    skills: [Skill.UI, Skill.UX, Skill.FullStack, Skill.DesignSystem, Skill.Visual, Skill.Branding],
+    category: Category.Website,
+    link: "https://www.facialsurgeryct.com", // Update with actual URL
+    description: `
+      Facial Surgery Center is a comprehensive medical website for an oral and maxillofacial surgery practice 
+      in Connecticut. Built with Next.js and Tailwind CSS, the site features a modern, patient-focused design 
+      with custom service cards, interactive components, and responsive layouts. I developed a complete design 
+      system with custom text components, color palette, and reusable UI elements. The site includes detailed 
+      service pages, patient information sections, doctor profiles, and contact forms. Special attention was 
+      given to medical industry standards, accessibility, and user experience to help patients understand 
+      procedures and feel confident in their care.
     `,
   },
 
